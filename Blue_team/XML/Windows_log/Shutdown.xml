@@ -1,0 +1,13 @@
+<!-- Filter Event logs on windows endpoint to see what caused a disruption of services
+Event 41 - The devices Didnt restart correcly or cleanly
+Event 1074 - Triggers when users manual shutdown/restarted Or shutdow auto for updataes
+Event 6006 - Triggers when the Event log services has stopped
+Event 6005 - Triggers when Event logs Servuces starts
+Event 6008 - Indicates previous system shutdown was unexpected
+-->
+
+<QueryList>
+  <Query Id="0" Path="System">
+    <Select Path="System">*[System[(EventID=1074 or EventID=6006 or EventID=6005 or EventID=6008 or EventID=41)]]</Select>
+  </Query>
+</QueryList>
