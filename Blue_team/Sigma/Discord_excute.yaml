@@ -1,0 +1,14 @@
+title: Detect Discord 
+id: 1dc2cf74-e90b-4603-aa36-e88791cd7a5f
+status: test
+description: Detects the execution of Discord.exe on Endpoint. Discord has been the center of many cybercrimes.
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\Discord.exe'
+  condition: selection
+falsepositives:
+  - Legitimate user communication activity
+level: low
