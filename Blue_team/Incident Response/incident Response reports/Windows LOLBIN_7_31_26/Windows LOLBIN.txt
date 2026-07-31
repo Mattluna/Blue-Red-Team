@@ -1,0 +1,78 @@
+*scenario is real but sensitive information will be alerted*
+
+Incident Response Report 
+  
+Date: 7/31/2026
+Prepared By 	Matt 
+Contributor(s) 	 None  
+	 
+Department: IT	 
+Incident Name: 	 Windows LOLBIN
+Incident Number:	 
+ 
+  
+ Incident Summary: 
+-	How the incident was detected, What alerts was triggered?
+    
+
+-	What is the source of the attack, what was their target or wants?
+-	What is the method of the attack (malware, malicious document, and other adversary attacks)?  
+-	Determining the potential business impact of the cybersecurity incident 
+ 
+Information Exposure 
+- What information was breached/accessed/stolen and impact with respect to operations, teaching or research?  
+ 
+Investigative Findings  
+Incident Timeline  
+Key events in timeline which lead to detections
+ 
+Date & Time (MDT) Detection Source & Description 
+ 	                  : 
+	                  :  
+ 
+ 
+Incident Analysis 
+Malware and miscellaneous files connected to the compromise 
+Name 	Location/File Path 	Hash  	Size 	User 	Malicious IP 	Vulnerability Exploited 
+
+
+ 
+Extent of the compromise 
+List of assets that could be affected. This includes devices such as servers, workstations and laptops, user accounts, services, applications, etc.  
+
+Server: 
+IP address: 
+Purpose: 
+ User Account:
+ Process:
+Comments: 
+ 	 	 	 	 	 
+ 	 	 	 	 	 
+ 
+Containment  
+  Explain the steps taken to contain the incident. 
+ The goal of containment is to minimize the damage to the organization, It also to prevent further damage/exploit
+ 
+Preservation of evidence  
+-	image of disk and logs
+-	Detection rules lead to discovery.
+-	A detailed written log of every action during the investigation 
+-	Documentation of the environment  
+ 
+Eradication 
+ 
+Eradication is intended to remove malware or other artifacts introduced by the attacks and fully restore the affected system. 
+ 
+-	Do you know the point of entry? 
+-	How do fix the problem and verify the threat has been eradicated? 
+-	What additional hardening, patching, and/or configuration steps need to be taken?  
+-	Is there any patching that needs to be done to ensure other systems on the network aren’t affected or changes that need to be made to prevent future breaches.
+
+
+
+
+ 
+-	 
+Recovery 
+- The goal of recovery is to bring all systems back online and confirm the threat been Eradicated. 
+ 
