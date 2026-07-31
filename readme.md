@@ -13,4 +13,7 @@ This will be a collection of red, blue team and any other information.
 
 # Red Team
 
- * 
+ * Reconnaissance
+ * Exploitation & Lateral Movement
+ * CTF
+   
