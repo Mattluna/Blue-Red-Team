@@ -3,21 +3,26 @@
 Incident Response Report 
   
 Date: 7/31/2026
-Prepared By 	Matt 
+Prepared By:  Matt 
 Contributor(s) 	 None  
 	 
 Department: IT	 
 Incident Name: 	 Windows LOLBIN
-Incident Number:	 
+Incident Number:	001 
  
   
  Incident Summary: 
 -	How the incident was detected, What alerts was triggered?
-    
+    This incident was Detected by the XDR system, That alert that was triggered based on Windows LOLBIN attack techniques
 
 -	What is the source of the attack, what was their target or wants?
+	The source was Claud.exe
+
 -	What is the method of the attack (malware, malicious document, and other adversary attacks)?  
--	Determining the potential business impact of the cybersecurity incident 
+	Claud.exe opened PowerShell and ran a command to dependencies information on the PowerShell and system environment. 
+
+-	Determining the potential business impact of the cybersecurity incident
+	The business impact is minimal do to this alert. 
  
 Information Exposure 
 - What information was breached/accessed/stolen and impact with respect to operations, teaching or research?  
@@ -27,8 +32,8 @@ Incident Timeline
 Key events in timeline which lead to detections
  
 Date & Time (MDT) Detection Source & Description 
- 	                  : 
-	                  :  
+ 	   claude.exe      :  Detection of 
+       Powershell.exe  :  Microsoft tool 
  
  
 Incident Analysis 
