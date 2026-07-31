@@ -1,0 +1,48 @@
+Incident Report
+Executive Summary
+•	Incident ID: 0001
+•	Incident Severity: Low
+•	Incident Status: False Positive
+•	Incident Overview: 
+
+
+Technical Analysis
+Affected Systems & Data
+
+
+Evidence Sources & Analysis
+
+
+Indicators of Compromise (IoCs)
+
+Root Cause Analysis
+
+Technical Timeline
+•	
+•	
+•	Eradication Times
+
+
+
+Nature of the Attack
+
+Impact Analysis
+
+Response and Recovery Analysis
+Immediate Response Actions
+
+Containment Strategy
+
+Eradication Measures
+
+Recovery Steps
+Data Restoration
+
+System Validation
+
+Post-Incident Actions
+Monitoring
+
+
+Lessons Learned
+
