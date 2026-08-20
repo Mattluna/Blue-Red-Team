@@ -1,4 +1,5 @@
 
+
 Incident Report
 Executive Summary
 •	Incident ID: 2026-0254
@@ -6,10 +7,10 @@ Executive Summary
 •	Incident Status: Resolved
 •	Incident Overview:  
 
-The Incident was triggered when Claude AI application, Which was installed and running locally on and endpoint. Claude Attempted
-to establish a connection to an unknown external IP by executing a PowerShell command which triggered an alert on XDR for Windows LOLBin.
+The Incident was triggered when Claude AI application, Which was installed and running locally on an endpoint. Claude Attempted
+to establish a connection to an unknown external IP by executing a PowerShell command which triggered an alert on XDR system for Windows LOLBin.
 It was determined the activity did not represent a malicious attack. 
-However, the event was a violation of organizational policy which would result in repones to the incident 
+However, the event was a violation of organizational AI policy which would result in repones to the incident 
 
 
 Technical Analysis
