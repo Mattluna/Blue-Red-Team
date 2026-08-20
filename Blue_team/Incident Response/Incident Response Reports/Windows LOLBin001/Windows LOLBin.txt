@@ -1,18 +1,21 @@
+
 Incident Report
 Executive Summary
 •	Incident ID: 2026-0254
 •	Incident Severity: Low
-•	Incident Status: False Positive
+•	Incident Status: Resolved
 •	Incident Overview:  
+
 The Incident was triggered when Claude AI application, Which was installed and running locally on and endpoint. Claude Attempted
-to establish a connection to an unknown external IP. It was determined the activity did not represent a malicious attack. 
-However, the event was a violation of organizational policy 
+to establish a connection to an unknown external IP by executing a PowerShell command which triggered an alert on XDR for Windows LOLBin.
+It was determined the activity did not represent a malicious attack. 
+However, the event was a violation of organizational policy which would result in repones to the incident 
 
 
 Technical Analysis
 Affected Systems & Data
-1 Endpoint
- <Endpoint name>
+Affected Endpoint: 1 
+Endpoint Name: <Endpoint name>
 
 Evidence Sources & Analysis
 
@@ -20,7 +23,12 @@ Evidence Sources & Analysis
 Indicators of Compromise (IoCs)
 
 Root Cause Analysis
-Claude AI
+The root cause of the policy violation was the unauthorized local installment of Claude AI application on organizational endpoint.
+
+Due to the application being installed the AI was able to use endpoint resources on behalf of the user. 
+It is  believe the user as the AI to perform a task which resulted into the connection attempt to the external IP
+
+The investigation found no evidence that the system was compromised however still a policy violation.
 
 Technical Timeline
 •	Claude.exe
@@ -33,20 +41,30 @@ Technical Timeline
 
 Nature of the Attack
 
+This event was determined not to be a malicious attacks
+
+The alert was generated due to the a powershell command tried to connect to an external IP
+
 Impact Analysis
-No real attack.
+No confirmed compromise or data loss was identified.
+
 
 Response and Recovery Analysis
 Immediate Response Actions
-* Isolate the connect attempt to the external IP
-* Find the chain of custody of this execute. 
-* 
-Containment Strategy
+ 
+• Investigated the connection attempt to the unknown external IP.
+• Identified the application responsible for initiating the activity.
+• Traced the process execution chain making Claude.exe the Parent.
+• Confirmed that Claude was installed locally on the affected endpoint.
+• Isolated/prevented the identified external connection as appropriate.
+• Reviewed the endpoint for additional suspicious activity.
+• Confirmed that no evidence of compromise was identified.
 
+Containment Strategy
+The locally installed Claude Application was removed from the Endpoint.
 
 Eradication Measures
-Remove the .exe from the endpoint per policy standard
-New Controls in place to prevent the use of claude.exe on local machine.
+Removed Claude.exe
 
 Recovery Steps
 Data Restoration
@@ -61,7 +79,7 @@ None was needed
 
 Lessons Learned
 
-The lesson learned that better controls needed to be in place to ensure this type of appliction doesnt have local access. 
+The lesson learned that better controls needed to be in place to ensure this type of application doesn't have local access. 
 New policy and controls was explored to prevent a Incident like this from happing again
 
 Final Disposition
