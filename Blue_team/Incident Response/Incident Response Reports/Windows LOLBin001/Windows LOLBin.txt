@@ -1,14 +1,18 @@
 Incident Report
 Executive Summary
-•	Incident ID: 0001
+•	Incident ID: 2026-0254
 •	Incident Severity: Low
 •	Incident Status: False Positive
-•	Incident Overview: 
+•	Incident Overview:  
+The Incident was triggered when Claude AI application, Which was installed and running locally on and endpoint. Claude Attempted
+to establish a connection to an unknown external IP. It was determined the activity did not represent a malicious attack. 
+However, the event was a violation of organizational policy 
 
 
 Technical Analysis
 Affected Systems & Data
-
+1 Endpoint
+ <Endpoint name>
 
 Evidence Sources & Analysis
 
@@ -16,10 +20,13 @@ Evidence Sources & Analysis
 Indicators of Compromise (IoCs)
 
 Root Cause Analysis
+Claude AI
 
 Technical Timeline
-•	
-•	
+•	Claude.exe
+•	Powershell.exe
+• Command executed. 
+
 •	Eradication Times
 
 
@@ -27,22 +34,41 @@ Technical Timeline
 Nature of the Attack
 
 Impact Analysis
+No real attack.
 
 Response and Recovery Analysis
 Immediate Response Actions
-
+* Isolate the connect attempt to the external IP
+* Find the chain of custody of this execute. 
+* 
 Containment Strategy
 
+
 Eradication Measures
+Remove the .exe from the endpoint per policy standard
+New Controls in place to prevent the use of claude.exe on local machine.
 
 Recovery Steps
 Data Restoration
+None needed
 
 System Validation
+Validate the removal of the application and any other file belonging to program
 
 Post-Incident Actions
 Monitoring
-
+None was needed
 
 Lessons Learned
 
+The lesson learned that better controls needed to be in place to ensure this type of appliction doesnt have local access. 
+New policy and controls was explored to prevent a Incident like this from happing again
+
+Final Disposition
+
+Incident Classification: False Positive / Policy Violation
+Severity: Low
+Security Compromise: None Identified
+Data Loss: None Identified
+Remediation: Application Removed
+Preventive Action: Enhanced Application and Endpoint Controls
