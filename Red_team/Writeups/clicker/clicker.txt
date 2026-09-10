@@ -37,7 +37,7 @@ public on the NFS
 3. We will mount to the NFS "mount -t nfs 10.10.11.232:/mnt/backups 
 <mount location on local machine>"
 
-One it mounts you are able to see the files within the location you set.
+Once it's mounted you are able to see the files within the location you set.
 For this example we are giving code on how the website works
 and interacts with the data.
 
@@ -54,7 +54,7 @@ GET /save_game.php?clicks=10&level=10&role/**/=Admin
 
 7. we are able to see the top scores and request an export which is hosted 
 on the site. The request can be changed from .txt to a .php. This is how
-we will use the shell.
+we will use connetion shell.
 
 8. Send the shell as a saved player through the nickname function
 
