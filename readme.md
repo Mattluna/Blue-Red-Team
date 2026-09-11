@@ -17,3 +17,4 @@ This will be a collection of red, blue team and any other information.
  * Exploitation & Lateral Movement
  * CTF
    
+# Cloud Security (https://github.com/Mattluna/Blue-Red-Team/tree/main/cloud_security)
