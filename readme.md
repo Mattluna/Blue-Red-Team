@@ -17,7 +17,7 @@ This will be a collection of red, blue team and any other information. This is f
  * Reconnaissance
  * Exploitation & Lateral Movement
  * CTF
- * Reverse Shells
+ * Reverse Shells ( all got from pentestmonkey.net)
    
 # Cloud Security
 
